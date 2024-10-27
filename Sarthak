@@ -2,14 +2,14 @@
 
 Servo Myservo;
 
-m1p1=1;
-m1p2=2;
-m2p1=3;
-m2p2=4;
-enA=5;
-enB=6;
-Trigpin=7;
-Echopin=8;
+m1p1=7;
+m1p2=5;
+m2p1=4;
+m2p2=2;
+enA=6;
+enB=3;
+Trigpin=13;
+Echopin=12;
 
 void setup () {
 
@@ -52,11 +52,11 @@ digitalWrite(m2p1, LOW);
 digitalWrite(m1p2, LOW);
 delayMicroseconds(1000);
 
-Myservo.write(180);
+Myservo.write(130);
 rightdistance= mdistance();
 delayMicroseconds(500);
 
-Myservo.write(0);
+Myservo.write(45);
 leftdistance= mdistance();
 delayMicroseconds(500);
 
