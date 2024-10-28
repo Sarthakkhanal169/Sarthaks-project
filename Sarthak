@@ -59,6 +59,7 @@ delayMicroseconds(500);
 Myservo.write(45);
 leftdistance= mdistance();
 delayMicroseconds(500);
+Myservo.write(90)
 
 if (leftdistance>rightdistance) {
 
