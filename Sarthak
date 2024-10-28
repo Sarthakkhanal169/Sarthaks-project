@@ -10,6 +10,7 @@ enA=6;
 enB=3;
 Trigpin=13;
 Echopin=12;
+Myservo.write(angle);
 
 void setup () {
 
@@ -52,11 +53,11 @@ digitalWrite(m2p1, LOW);
 digitalWrite(m1p2, LOW);
 delayMicroseconds(1000);
 
-Myservo.write(130);
+Myservo.write(angle+45);
 rightdistance= mdistance();
 delayMicroseconds(500);
 
-Myservo.write(45);
+Myservo.write(angle-45);
 leftdistance= mdistance();
 delayMicroseconds(500);
 Myservo.write(90)
